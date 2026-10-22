@@ -9,6 +9,7 @@ import { Component, Input } from '@angular/core';
 export class DeporteComponent {
 
   @Input() deporte!: string;
+  
   public mensaje!: string;
 
 
