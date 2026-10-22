@@ -1,0 +1,15 @@
+<div class="card">
+    <h2>{{car.marca}}</h2>
+    <h3>{{car.modelo}}</h3>
+    <h4 [ngClass]="{
+            stopped: car.velocidad == 0,
+            running: car.velocidad > 0
+        }" 
+        >{{car.velocidad}} Km/h
+    </h4>
+    <div class="flex gap1">
+        <button class="card" (click)="accelerarCoche()">Acelerar</button>
+        <button class="card" (click)="frenarCoche()">Frenar</button>
+    </div>
+</div>
+<br>
