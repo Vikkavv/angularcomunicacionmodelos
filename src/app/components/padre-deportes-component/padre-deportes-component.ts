@@ -9,7 +9,11 @@ import { Component } from '@angular/core';
 export class PadreDeportesComponent {
 
   public deportes!: Array<string>;
+  public favorito!: string
   
+  setFavorito(event: string): void{
+    this.favorito = event;
+  }
 
   constructor(){
     this.deportes = ["Fútbol", "Pádel", "Ténis", "Baloncesto"]

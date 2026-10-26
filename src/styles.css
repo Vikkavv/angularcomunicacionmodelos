@@ -15,17 +15,26 @@
     grid-template-columns: repeat(5, 1fr);
 }
 
+.col-4{
+    grid-template-columns: repeat(4, 1fr);
+}
+
 .gap1{
     gap: 1rem;
 }
 
-.card{
+.card, .btn{
     border-radius: 1rem;
     border: 1px solid #f0f0f0;
     padding: 1rem;
     & img{
         width: 100%;
+        max-width: 300px;
     }
+}
+
+.btn:hover{
+    border: 1px solid #222;
 }
 
 .card-img{
